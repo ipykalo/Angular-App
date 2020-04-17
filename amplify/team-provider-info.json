@@ -1,0 +1,22 @@
+{
+    "develop": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-angular-app-develop-152042-authRole",
+            "UnauthRoleArn": "arn:aws:iam::281312061132:role/amplify-angular-app-develop-152042-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::281312061132:role/amplify-angular-app-develop-152042-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-angular-app-develop-152042-deployment",
+            "UnauthRoleName": "amplify-angular-app-develop-152042-unauthRole",
+            "StackName": "amplify-angular-app-develop-152042",
+            "StackId": "arn:aws:cloudformation:eu-west-1:281312061132:stack/amplify-angular-app-develop-152042/defad0c0-80a5-11ea-9996-06e1cdb6e382",
+            "AmplifyAppId": "d14yfmdo3wkaht"
+        },
+        "categories": {
+            "auth": {
+                "angularapp6a26c12c": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"191174358645-b2k1ij25bl9ndlk21jsdsof6tr8kh13q.apps.googleusercontent.com\",\"client_secret\":\"Hgrfa9JmgbJT5DS_4uDI6bi5\"}]"
+                }
+            }
+        }
+    }
+}

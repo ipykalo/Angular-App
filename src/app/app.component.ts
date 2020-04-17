@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AmplifyService } from 'aws-amplify-angular';
+import { Auth } from 'aws-amplify';
 
 @Component({
     selector: 'app-root',
@@ -7,23 +8,12 @@ import { AmplifyService } from 'aws-amplify-angular';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    title = 'angular-app';
 
-    signedIn: boolean;
-    user: any;
-    greeting: string;
+    login() {
+        Auth.federatedSignIn()
+    }
 
-    constructor( private amplifyService: AmplifyService ) {
-        this.amplifyService.authStateChange$
-            .subscribe(authState => {
-                debugger
-                this.signedIn = authState.state === 'signedIn';
-                if (!authState.user) {
-                    this.user = null;
-                } else {
-                    this.user = authState.user;
-                    this.greeting = "Hello " + this.user.username;
-                }
-        });
+    logout() {
+        Auth.signOut()
     }
 }

@@ -4,14 +4,16 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
-import Amplify, { Auth } from 'aws-amplify';
-import awsconfig from './aws-exports';
-
 if (environment.production) {
-  enableProdMode();
+    enableProdMode();
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+    .catch(err => console.error(err));
 
+/**
+ * Configuring the Amplify provider
+ */
+import Amplify, { Auth } from 'aws-amplify';
+import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);

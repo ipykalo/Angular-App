@@ -62,9 +62,9 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  * APPLICATION IMPORTS
  */
 
- /**
-  * AmplifyJS. Angular 6-8 Support
-  */
+/**
+ * Angular 6-8 Support
+ */
 (window as any).global = window;
 (window as any).process = {
   env: { DEBUG: undefined },

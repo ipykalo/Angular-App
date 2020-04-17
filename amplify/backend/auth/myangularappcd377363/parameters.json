@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "angularapp6a26c12c_identitypool_6a26c12c",
+    "identityPoolName": "myangularappcd377363_identitypool_cd377363",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "angula6a26c12c",
-    "userPoolName": "angularapp6a26c12c_userpool_6a26c12c",
+    "resourceNameTruncated": "myangucd377363",
+    "userPoolName": "myangularappcd377363_userpool_cd377363",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -18,9 +18,7 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "email",
-        "name",
-        "phone_number"
+        "email"
     ],
     "userpoolClientGenerateSecret": true,
     "userpoolClientRefreshTokenValidity": 30,
@@ -30,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "angula6a26c12c_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "myangucd377363_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "angularapp6a26c12c",
+    "resourceName": "myangularappcd377363",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -48,15 +46,12 @@
     },
     "useDefault": "defaultSocial",
     "hostedUI": true,
-    "usernameAttributes": [
-        "email, phone_number"
-    ],
     "triggers": "{}",
-    "hostedUIDomainName": "angularapp",
+    "hostedUIDomainName": "myangular",
     "authProvidersUserPool": [
         "Google"
     ],
-    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"name\":\"name\",\"phone_number\":\"phoneNumbers\",\"username\":\"sub\"}}]",
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
     "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:4200/\"],\"LogoutURLs\":[\"http://localhost:4200/\"]}",
     "userPoolGroupList": [],
     "parentStack": {
